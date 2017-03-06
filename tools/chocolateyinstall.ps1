@@ -22,4 +22,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs # https://chocolatey.org/docs/helpers-install-chocolatey-package
-Install-ChocolateyPath "$($env:SystemDrive)\Program Files\LLVM\bin" "User" # Machine will assert administrative rights
+Install-ChocolateyPath "$($env:SystemDrive)\Program Files\LLVM\bin" "Machine" # Machine will assert administrative rights
