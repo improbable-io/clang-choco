@@ -1,9 +1,10 @@
 ﻿$ErrorActionPreference = "Stop"; # stop on all errors
 
-$packageName= "clang"
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = "http://releases.llvm.org/3.8.0/LLVM-3.8.0-win32.exe"
-$url64      = "http://releases.llvm.org/3.8.0/LLVM-3.8.0-win64.exe"
+$packageName = "clang"
+$version     = "3.8.0"
+$toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$url         = "http://releases.llvm.org/$($version)/LLVM-$($version)-win32.exe"
+$url64       = "http://releases.llvm.org/$($version)/LLVM-$($version)-win64.exe"
 
 $packageArgs = @{
   packageName   = $packageName
