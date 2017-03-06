@@ -9,7 +9,7 @@ Releasing package. This requires:
 * you to have the chocolatey API key set for the account.
 "@
 
-$package = ".\spatial.$packageVersion.nupkg"
+$package = ".\clang.$packageVersion.nupkg"
 if (-not (test-path $package)) {
   write-error @"
 $package does not exist, cannot publish.
