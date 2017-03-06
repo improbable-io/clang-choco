@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>clang</id>
+    <version>$($tvVersion)</version>
+    <packageSourceUrl>https://github.com/bimmlerd/clang-choco</packageSourceUrl>
+    <owners>bimmlerd, petemounce</owners>
+
+    <title>LLVM compiler infrastructure clang (Install)</title>
+    <authors>LLVM team</authors>
+    <projectUrl>http://clang.llvm.org/</projectUrl>
+    <!--<iconUrl>http://cdn.rawgit.com/__REPLACE_YOUR_REPO__/master/icons/clang.png</iconUrl>-->
+    <!-- <copyright>Year Software Vendor</copyright> -->
+    <licenseUrl>http://llvm.org/docs/DeveloperPolicy.html#license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>http://clang.llvm.org/get_started.html</projectSourceUrl>
+    <docsUrl>http://releases.llvm.org/$($tvVersion)/docs/</docsUrl>
+    <mailingListUrl>http://lists.llvm.org/mailman/listinfo/llvm-dev</mailingListUrl>
+    <bugTrackerUrl>http://llvm.org/bugs/enter_bug.cgi</bugTrackerUrl>
+    <tags>llvm clang compiler c++</tags>
+    <summary>The LLVM Project is a collection of modular and reusable compiler and toolchain technologies.</summary>
+    <description>The LLVM compiler infrastructure supports a wide range of projects, from industrial strength compilers to specialized JIT applications to small research projects.</description>
+    <releaseNotes>http://releases.llvm.org/$($tvVersion)/docs/ReleaseNotes.html</releaseNotes>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
