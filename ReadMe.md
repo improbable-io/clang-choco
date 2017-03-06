@@ -1,6 +1,6 @@
 ﻿# LLVM package
 
-This packages up LLVM for Windows, making it possible to install via `choco install clang`.
+This packages up LLVM for Windows, making it possible to install via [`choco install clang`](https://chocolatey.org/packages/clang).
 
 ## Contributing
 
