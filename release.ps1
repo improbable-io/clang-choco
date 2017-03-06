@@ -25,4 +25,4 @@ retry release.ps1
 & choco push $package
 
 write-host "Done"
-exit 0
+exit $LASTEXITCODE
