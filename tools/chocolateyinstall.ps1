@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = "Stop"; # stop on all errors
 
 $packageName = "clang"
-$version     = "3.9.1"
+$version     = "3.9.0"
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url         = "http://releases.llvm.org/$($version)/LLVM-$($version)-win32.exe"
 $url64       = "http://releases.llvm.org/$($version)/LLVM-$($version)-win64.exe"
@@ -13,9 +13,9 @@ $packageArgs = @{
   url           = $url
   url64bit      = $url64
   softwareName  = "LLVM"
-  checksum      = "F5CDF134E27A215A18515E2DCD100902DCF539F487C2028A817FFE7D3091F32A"
+  checksum      = "B4EAA1FA9872E2C76268F32FC597148CFA14C57B7D13E1EDD9B9B6496CDF7DE8"
   checksumType  = "sha256"
-  checksum64    = "7EA2B7BC0DE6B96A6CE11E6CFECE7B84A31FB0C86C977F42EE178CBA41517606"
+  checksum64    = "3E5B53A79266D3F7F1D5CB4D94283FE2BC61F9689E55F39E3939364F4076B0C9"
   checksumType64= "sha256"
 
   silentArgs   = "/S"
@@ -23,4 +23,4 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs # https://chocolatey.org/docs/helpers-install-chocolatey-package
-Install-ChocolateyPath "$($env:SystemDrive)\Program Files\LLVM\bin" "Machine" # Machine will assert administrative rights
+Install-ChocolateyPath "$($env:SystemDrive)\Program Files\LLVM\bin" "User" # Machine will assert administrative rights

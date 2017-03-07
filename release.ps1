@@ -1,5 +1,5 @@
 param(
-  [string] $packageVersion = "3.8.0"
+  [string] $packageVersion = "3.9.0"
 )
 
 $ErrorActionPreference = 'Stop'; # stop on all errors
