@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = "Stop"; # stop on all errors
 
 $packageName = "clang"
-$version     = "3.9.1"
+$version     = "3.7.0"
 $toolsDir    = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url         = "http://releases.llvm.org/$($version)/LLVM-$($version)-win32.exe"
 $url64       = "http://releases.llvm.org/$($version)/LLVM-$($version)-win64.exe"
@@ -13,9 +13,9 @@ $packageArgs = @{
   url           = $url
   url64bit      = $url64
   softwareName  = "LLVM"
-  checksum      = "F5CDF134E27A215A18515E2DCD100902DCF539F487C2028A817FFE7D3091F32A"
+  checksum      = "75933480C8F8E3AE3CF9281494BF0057E9E4CFAE4315F59C468A4E850A86F544"
   checksumType  = "sha256"
-  checksum64    = "7EA2B7BC0DE6B96A6CE11E6CFECE7B84A31FB0C86C977F42EE178CBA41517606"
+  checksum64    = "04A393CF73BC7416C9903AA08F47F15C77CF475B22A607AC4B7493A658A11A3F"
   checksumType64= "sha256"
 
   silentArgs   = "/S"
