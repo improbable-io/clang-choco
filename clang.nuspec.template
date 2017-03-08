@@ -3,7 +3,7 @@
   <metadata>
     <id>clang</id>
     <version>$($tvVersion)</version>
-    <packageSourceUrl>https://github.com/bimmlerd/clang-choco</packageSourceUrl>
+    <packageSourceUrl>https://github.com/improbable-io/clang-choco</packageSourceUrl>
     <owners>bimmlerd, petemounce</owners>
 
     <title>LLVM compiler infrastructure clang (Install)</title>
