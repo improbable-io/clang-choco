@@ -1,6 +1,6 @@
 param(
   [switch] $prerelease,
-  [string] $sources = "."
+  [string] $sources = ".;http://chocolatey.org/api/v2/"
 )
 
 choco uninstall clang --force -y

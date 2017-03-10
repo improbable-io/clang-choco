@@ -22,6 +22,7 @@
     <description>The LLVM compiler infrastructure supports a wide range of projects, from industrial strength compilers to specialized JIT applications to small research projects.</description>
     <releaseNotes>http://releases.llvm.org/$($tvVersion)/docs/ReleaseNotes.html</releaseNotes>
     <dependencies>
+        <dependency id="autohotkey"/>
     </dependencies>
   </metadata>
   <files>
